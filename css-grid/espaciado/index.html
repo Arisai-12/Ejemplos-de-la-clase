@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS GRID Espaciado</title>
+    <style>
+        body{
+            font-family: Arial;
+
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 25%);
+            grid-auto-rows: 50px;
+            /* justify-content: start | end | center | stretch | space-around | space-between | space-evenly;	 */
+            justify-content: space-evenly;
+            /* gap: 10px; */
+            /* grid-column-gap:  15px;
+            grid-row-gap: 30px; */
+
+        }
+        .item {
+            background: lightblue;
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item">item #1</div>
+        <div class="item">item #2</div>
+        <div class="item">item #3</div>
+        <div class="item">item #4</div>
+        <div class="item">item #5</div>
+        <div class="item">item #6</div>
+        <div class="item">item #7</div>
+        <div class="item">item #8</div>
+        <div class="item">item #9</div>
+        <div class="item">item #10</div>
+        <div class="item">item #11</div>
+        <div class="item">item #12</div>
+    </section>
+</body>
+</html>

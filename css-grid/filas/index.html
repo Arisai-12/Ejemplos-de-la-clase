@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS GRID Columns</title>
+    <style>
+        body{
+            font-family: Arial;
+
+        }
+        .container {
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 180px 1fr 130px 1fr; */
+
+            /* grid: <tamaño de las filas> / <tamaño de las columnas>; */
+            grid-template: 180px 1fr 130px 1fr / 1fr 2fr 3fr;
+            grid-auto-rows: 80px;
+            gap: 5px;   
+        }
+        .item {
+            background: lightblue;
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="item">item #1</div>
+        <div class="item">item #2</div>
+        <div class="item">item #3</div>
+        <div class="item">item #4</div>
+        <div class="item">item #5</div>
+        <div class="item">item #6</div>
+        <div class="item">item #7</div>
+        <div class="item">item #8</div>
+        <div class="item">item #9</div>
+        <div class="item">item #10</div>
+        <div class="item">item #11</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+        <div class="item">item #12</div>
+    </section>
+</body>
+</html>

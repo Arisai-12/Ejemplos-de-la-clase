@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <style>
+        header,
+        footer,
+        section,
+        aside,
+        nav,
+        div {
+            padding: 20px;
+            background: gold;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+
+            display: grid;
+            gap: 10px;
+            /* grid: 60px 1fr 60px /  20% 1fr 15%; */
+            grid-template-areas: 
+            'header header header'
+            'nav article ads'
+            'footer footer footer';
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-columns: 20% 1fr 15%;
+            height: 100vh;
+        }
+        #header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        section {
+            grid-area: article;
+        }
+        aside {
+            grid-area: ads;
+        }
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"> Header</header>
+    <nav>Nav</nav>
+    <section>Article</section>
+    <aside>Ads</aside>
+    <footer>Footer</footer>
+</body>
+</html>
