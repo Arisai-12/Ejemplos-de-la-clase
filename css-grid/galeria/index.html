@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Galeria</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            align-items: start;
+            justify-items: center;
+            width: 75%;
+            margin: 10px auto;
+        }
+
+        .grid img {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+        .grid img:nth-child(2) {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        /* .grid img {
+           
+        }
+
+        .grid img:nth-child(2) {
+            grid-column: span 3;
+            grid-row: span 2;
+        } */
+    </style>
+</head>
+
+<body>
+    <section class="grid">
+        <img src="./img/1.jpg" alt="">
+        <img src="./img/2.jpg" alt="">
+        <img src="./img/3.jpg" alt="">
+        <img src="./img/4.jpg" alt="">
+        <img src="./img/5.jpg" alt="">
+        <img src="./img/6.jpg" alt="">
+        <img src="./img/7.jpg" alt="">
+        <img src="./img/8.jpg" alt="">
+        <img src="./img/9.jpg" alt="">
+        <img src="./img/10.jpg" alt="">
+    </section>
+</body>
+
+</html>
